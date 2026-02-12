@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rico Dulce — Menu</title>
+  <style>
+    * { box-sizing: border-box; margin:0; padding:0 }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background:#faf5f0; color:#262626; }
+    header { display:flex; align-items:center; justify-content:space-between; padding:1rem 2rem; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,.1); }
+    .logo { display:flex; gap:.5rem; align-items:center; font-weight:600 }
+    nav { display:flex; gap:1rem }
+    nav a{ text-decoration:none; color:#262626 }
+    .menu-wrap{ max-width:1200px; margin:2rem auto; padding:0 1rem }
+    .menu-image{ width:100%; height:auto; max-height:none; object-fit:contain; border-radius:.75rem; box-shadow:0 8px 20px rgba(0,0,0,.12) }
+    h1,h2{ margin:1rem 0 }
+    .menu-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.25rem; margin-top:1.5rem }
+    .card{ background:#fff; padding:1.25rem; border-radius:1rem; box-shadow:0 4px 6px rgba(0,0,0,.07) }
+    footer{ text-align:center; padding:1.5rem; background:#78350f; color:#fff; margin-top:2rem }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <svg class="coffee-icon" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M18.3 5.71L9.17 2.43C8.35 2.12 7.65 2 7 2q-2.06 0-3.53 1.47T2 8.95v10.12C2 20.55 3.45 22 5.3 22h11.4c1.85 0 3.3-1.45 3.3-3.3V8.95c0-.65-.12-1.35-.4-2.24zm-11 11.29H5.3v2.6h2v-2.6zm0-3.9H5.3v2.6h2v-2.6zm4 3.9h-2v2.6h2v-2.6zm0-3.9h-2v2.6h2v-2.6zm4-3.9h-2v2.6h2v-2.6zm0 3.9h-2v2.6h2v-2.6z"/></svg>
+      Rico Dulce
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="menu-wrap">
+    <h1>Our Menu</h1>
+    <img src="PHOTO-2026-02-11-16-06-14.jpg" alt="Rico Dulce menu" class="menu-image" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541542684-0c48f1f3f6d8?auto=format&fit=crop&w=1200&q=80'">
+
+    <h2>Popular Picks</h2>
+    <div class="menu-grid">
+      <div class="card">
+        <h3>Cappuccino</h3>
+        <p>Made fresh daily using quality beans and expert technique.</p>
+      </div>
+      <div class="card">
+        <h3>Avocado Toast</h3>
+        <p>Toasted sourdough topped with smashed avocado and olive oil.</p>
+      </div>
+      <div class="card">
+        <h3>Blueberry Muffin</h3>
+        <p>Buttery muffin bursting with fresh blueberries.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Rico Dulce</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
